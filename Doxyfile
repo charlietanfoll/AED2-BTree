@@ -1,0 +1,61 @@
+# Doxyfile para Trabalho 1 de AED II - Árvore B
+
+# Informações do Projeto
+PROJECT_NAME           = "Árvore B em Memória Secundária"
+PROJECT_NUMBER         = "1.0"
+PROJECT_BRIEF          = "Implementação de Árvore B em disco com mSearch, insertB e deleteB (AED II)"
+OUTPUT_DIRECTORY       = "doc"
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Portuguese
+
+# Extração de Métodos e Classes
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PRIV_VIRTUAL   = YES
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+CASE_SENSE_NAMES       = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+JAVADOC_AUTOBRIEF      = YES
+
+# Arquivos de Entrada e Varredura
+INPUT                  = .
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.c \
+                         *.cc \
+                         *.cxx \
+                         *.cpp \
+                         *.cppm \
+                         *.c++ \
+                         *.h \
+                         *.hh \
+                         *.hxx \
+                         *.hpp \
+                         *.h++ \
+                         *.md
+RECURSIVE              = YES
+
+EXCLUDE_PATTERNS       = */cmake-build-*/* \
+                         */.idea/*
+
+# Geração de Saída
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+GENERATE_LATEX         = NO
+GENERATE_RTF           = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+
+# Visualização de Código-Fonte
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = NO
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Diagramas (Desativado dot por padrão para funcionar sem Graphviz instalado)
+HAVE_DOT               = NO
+CLASS_DIAGRAMS         = YES
