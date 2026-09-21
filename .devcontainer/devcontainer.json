@@ -1,7 +1,7 @@
 {
-  "name": "C++23 e CMake (Alpine Linux)",
-  "image": "mcr.microsoft.com/devcontainers/base:alpine",
-  "onCreateCommand": "apk update && apk add --no-cache build-base clang clang-extra-tools cmake gdb git lldb ninja",
+  "name": "C++23 e CMake (Ubuntu)",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-24.04",
+  "onCreateCommand": "sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends clang clang-format cmake gdb git lldb ninja-build && sudo rm -rf /var/lib/apt/lists/*",
   "customizations": {
     "vscode": {
       "settings": {
