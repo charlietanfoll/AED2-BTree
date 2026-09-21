@@ -1,0 +1,21 @@
+{
+  "name": "C++23 e CMake (Alpine Linux Leve)",
+  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+  "onCreateCommand": "apk update && apk add --no-cache build-base cmake ninja gdb",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "C_Cpp.default.cppStandard": "c++23",
+        "C_Cpp.default.cStandard": "c17",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake"
+      ]
+    }
+  },
+  "postCreateCommand": "cmake -B build -S . && cmake --build build"
+}
