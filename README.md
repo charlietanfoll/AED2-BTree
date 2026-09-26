@@ -2,13 +2,10 @@
 
 ## Como executar
 
-Com o compilador C++23 instalado, compile e execute o projeto com:
+Desempacote os arquivos em uma pasta, logo em seguida, verifique se você está em um ambiente linux atualizado com a versão mais recente do seu compilador de C++.
+Ou crie um devcontainer com as seguintes depências:
 
-```bash
-g++ -std=c++23 -Wall -Wextra -fpermissive main.cpp -o arvoreb && ./arvoreb
-```
 
-O programa sera executado no terminal e exibira o menu da Arvore B.
 
 Para usar CMake, configure, compile e execute com:
 
